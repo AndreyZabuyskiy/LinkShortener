@@ -31,6 +31,19 @@ public class SqlRepository : IRepository
         };
     }
 
+    public UserReadModel GetById(Guid id)
+    {
+        var user = _context.Users.FirstOrDefault(u => u.Id == id);
+
+        if (user == null) return null;
+
+        return new UserReadModel()
+        {
+            Id = user.Id,
+            Login = user.Login
+        };
+    }
+
     public UserLoginModel? GetByLogin(string login)
     {
         var user = _context.Users.FirstOrDefault(u => u.Login == login);

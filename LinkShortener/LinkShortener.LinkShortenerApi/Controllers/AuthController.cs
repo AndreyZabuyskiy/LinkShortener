@@ -13,11 +13,13 @@ public class AuthController : Controller
 {
     private readonly IRegisterUser _registerUser;
     private readonly ILoginUser _loginUser;
+    private readonly IGetUser _getUser;
 
-    public AuthController(IRegisterUser registerUser, ILoginUser loginUser)
+    public AuthController(IRegisterUser registerUser, ILoginUser loginUser, IGetUser getUser)
     {
         _registerUser = registerUser;
         _loginUser = loginUser;
+        _getUser = getUser;
     }
 
     [HttpPost("register")]
@@ -55,5 +57,27 @@ public class AuthController : Controller
             Status = StatusResponse.Success,
             Messages = new List<string>() { "Success" }
         });
+    }
+
+    [HttpGet("user")]
+    public IActionResult User()
+    {
+        try
+        {
+            var jwt = Request.Cookies["jwt"];
+
+            var user = _getUser.GetUser(jwt);
+
+            return Ok(new GetUserResponse()
+            {
+                Status = StatusResponse.Success,
+                Data = user,
+                Messages = new List<string>() { "Success" }
+            });
+        }
+        catch (Exception ex)
+        {
+            return Unauthorized();
+        }
     }
 }

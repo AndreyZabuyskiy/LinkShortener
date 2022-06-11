@@ -24,6 +24,7 @@ builder.Services.AddScoped<IRepository, SqlRepository>();
 
 builder.Services.AddScoped<IRegisterUser, AuthService>();
 builder.Services.AddScoped<ILoginUser, AuthService>();
+builder.Services.AddScoped<IGetUser, AuthService>();
 
 var app = builder.Build();
 
