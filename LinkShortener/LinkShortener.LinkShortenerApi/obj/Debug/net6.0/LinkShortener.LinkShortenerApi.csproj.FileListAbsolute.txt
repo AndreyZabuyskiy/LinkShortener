@@ -64,3 +64,4 @@ D:\Программирование\Projects\ShortenerLinkProject\LinkShortener\
 D:\Программирование\Projects\ShortenerLinkProject\LinkShortener\LinkShortener.LinkShortenerApi\bin\Debug\net6.0\LinkShortener.DataAccess.pdb
 D:\Программирование\Projects\ShortenerLinkProject\LinkShortener\LinkShortener.LinkShortenerApi\bin\Debug\net6.0\LinkShortener.Domain.pdb
 D:\Программирование\Projects\ShortenerLinkProject\LinkShortener\LinkShortener.LinkShortenerApi\bin\Debug\net6.0\BCrypt.Net-Next.dll
+D:\Программирование\Projects\ShortenerLinkProject\LinkShortener\LinkShortener.LinkShortenerApi\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll

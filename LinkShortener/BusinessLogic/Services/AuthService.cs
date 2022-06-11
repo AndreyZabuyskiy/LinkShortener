@@ -4,11 +4,15 @@ using LinkShortener.BusinessLogic.Dtos.Request;
 using LinkShortener.BusinessLogic.Dtos.Response;
 using LinkShortener.BusinessLogic.UseCases;
 using LinkShortener.DataAccess.Entities.Request;
+using Microsoft.IdentityModel.Tokens;
+using System.IdentityModel.Tokens.Jwt;
+using System.Text;
 
 namespace BusinessLogic.Services;
 
 public class AuthService : IRegisterUser, ILoginUser
 {
+    private string _secureKey = "TBWq2ePoc9RWzueO8fsi2lQ55dvM8IOr";
     private readonly IRepository _repository;
 
     public AuthService(IRepository repository)
@@ -16,7 +20,7 @@ public class AuthService : IRegisterUser, ILoginUser
         _repository = repository;
     }
 
-    public UserReadDto Login(LoginDto loginData)
+    public string Login(LoginDto loginData)
     {
         var user = _repository.GetByLogin(loginData.Login);
 
@@ -30,11 +34,7 @@ public class AuthService : IRegisterUser, ILoginUser
             return null;
         }
 
-        return new UserReadDto()
-        {
-            Id = user.Id,
-            Login = user.Login,
-        };
+        return GenerateJwt(user.Id);
     }
 
     public UserReadDto Register(RegisterDto registerData)
@@ -52,5 +52,17 @@ public class AuthService : IRegisterUser, ILoginUser
             Id = user.Id,
             Login = user.Login
         };
+    }
+
+    private string GenerateJwt(Guid id)
+    {
+        var symmetricSecurityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_secureKey));
+        var credentials = new SigningCredentials(symmetricSecurityKey, SecurityAlgorithms.HmacSha256Signature);
+        var header = new JwtHeader(credentials);
+
+        var payload = new JwtPayload(id.ToString(), null, null, null, DateTime.Today.AddDays(1));
+        var securityToken = new JwtSecurityToken(header, payload);
+
+        return new JwtSecurityTokenHandler().WriteToken(securityToken);
     }
 }

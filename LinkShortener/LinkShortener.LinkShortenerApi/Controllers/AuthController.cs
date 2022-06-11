@@ -23,24 +23,20 @@ public class AuthController : Controller
     [HttpPost("register")]
     public IActionResult Register(RegisterDto registerData)
     {
-        var user = _registerUser.Register(registerData);
-
-        var response = new RegisterResponse()
+        return Created("Success", new RegisterResponse()
         {
             Status = StatusResponse.Success,
-            Data = user,
+            Data = _registerUser.Register(registerData),
             Messages = new List<string>() { "Success" }
-        };
-
-        return Created("Success", response);
+        });
     }
 
     [HttpPost("login")]
     public IActionResult Login(LoginDto loginData)
     {
-        var user = _loginUser.Login(loginData);
+        var token = _loginUser.Login(loginData);
 
-        if(user == null)
+        if(token == null)
         {
             return BadRequest(new LoginResponse()
             {
@@ -53,7 +49,7 @@ public class AuthController : Controller
         return Ok(new LoginResponse()
         {
             Status = StatusResponse.Success,
-            Data = user,
+            Data = token,
             Messages = new List<string>() { "Success" }
         });
     }

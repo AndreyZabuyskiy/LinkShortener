@@ -5,5 +5,5 @@ namespace LinkShortener.BusinessLogic.UseCases;
 
 public interface ILoginUser
 {
-    UserReadDto Login(LoginDto loginData);
+    string Login(LoginDto loginData);
 }
