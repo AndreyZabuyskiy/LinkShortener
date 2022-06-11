@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "hckKI9QdrOYBjONXjEqPD8YzXLWMMZoBC6R1SIY6wI0=",
+  "Source": "LinkShortener.LinkShortenerApi",
+  "BasePath": "_content/LinkShortener.LinkShortenerApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
