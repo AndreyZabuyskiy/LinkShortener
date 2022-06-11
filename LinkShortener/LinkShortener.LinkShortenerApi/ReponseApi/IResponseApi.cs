@@ -1,8 +1,14 @@
 ﻿namespace LinkShortener.LinkShortenerApi.ReponseApi;
 
+public interface IResponseApi
+{
+    StatusResponse Status { get; set; }
+    List<string> Messages { get; set; }
+}
+
 public interface IResponseApi<T>
 {
-    public StatusResponse Status { get; set; }
-    public T Data { get; set; }
-    public List<string> Messages { get; set; }
+    StatusResponse Status { get; set; }
+    T Data { get; set; }
+    List<string> Messages { get; set; }
 }

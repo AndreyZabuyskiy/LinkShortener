@@ -34,22 +34,25 @@ public class AuthController : Controller
     [HttpPost("login")]
     public IActionResult Login(LoginDto loginData)
     {
-        var token = _loginUser.Login(loginData);
+        var jwt = _loginUser.Login(loginData);
 
-        if(token == null)
+        if(jwt == null)
         {
             return BadRequest(new LoginResponse()
             {
                 Status = StatusResponse.NotLogin,
-                Data = null,
                 Messages = new List<string>() { "Invalid Credentials" }
             });
         }
 
+        Response.Cookies.Append("jwt", jwt, new CookieOptions()
+        {
+            HttpOnly = true
+        });
+
         return Ok(new LoginResponse()
         {
             Status = StatusResponse.Success,
-            Data = token,
             Messages = new List<string>() { "Success" }
         });
     }
