@@ -1,7 +1,8 @@
 ﻿namespace LinkShortener.DataAccess.Entities.Response;
 
-public class UserReadModel
+public class UserLoginModel
 {
     public Guid Id { get; set; }
     public string Login { get; set; }
+    public string Passport { get; set; }
 }

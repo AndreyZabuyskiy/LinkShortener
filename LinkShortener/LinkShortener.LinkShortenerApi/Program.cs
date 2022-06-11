@@ -1,7 +1,7 @@
 using BusinessLogic.Services;
-using BusinessLogic.UseCases;
 using DataAccess;
 using DataAccess.Repository;
+using LinkShortener.BusinessLogic.UseCases;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -21,6 +21,7 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddScoped<IRepository, SqlRepository>();
 
 builder.Services.AddScoped<IRegisterUser, AuthService>();
+builder.Services.AddScoped<ILoginUser, AuthService>();
 
 var app = builder.Build();
 

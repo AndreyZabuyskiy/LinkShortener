@@ -1,7 +1,7 @@
 ﻿using LinkShortener.BusinessLogic.Dtos;
 using LinkShortener.BusinessLogic.Dtos.Response;
 
-namespace BusinessLogic.UseCases;
+namespace LinkShortener.BusinessLogic.UseCases;
 
 public interface IRegisterUser
 {

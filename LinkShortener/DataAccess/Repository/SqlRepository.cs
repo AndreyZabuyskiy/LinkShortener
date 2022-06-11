@@ -1,6 +1,6 @@
-﻿using DataAccess.Entities.Request;
-using DataAccess.Entities.Response;
-using Domain;
+﻿using Domain;
+using LinkShortener.DataAccess.Entities.Request;
+using LinkShortener.DataAccess.Entities.Response;
 
 namespace DataAccess.Repository;
 
@@ -28,6 +28,20 @@ public class SqlRepository : IRepository
         {
             Id = user.Id,
             Login = userModel.Login
+        };
+    }
+
+    public UserLoginModel? GetByLogin(string login)
+    {
+        var user = _context.Users.FirstOrDefault(u => u.Login == login);
+
+        if(user == null) return null;
+
+        return new UserLoginModel()
+        {
+            Id = user.Id,
+            Login = user.Login,
+            Passport = user.Password
         };
     }
 }

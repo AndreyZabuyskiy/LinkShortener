@@ -1,4 +1,4 @@
-﻿namespace DataAccess.Entities.Request;
+﻿namespace LinkShortener.DataAccess.Entities.Request;
 
 public class UserCreateModel
 {
