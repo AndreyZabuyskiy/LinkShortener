@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "Z1yv3t6rJlTruWqC46LSaFbG3Zh7fsO6szLLl+0e12oLaNpLrJcmtaygvR3XZF3cM/aMWGp5oOMxvcoW16x7nQ==",
+  "dgSpecHash": "n+249LH+w2dNqeL5AIWUi82njvU1UzpaOSC26FVupgRfGiWLLFNYGO2ehl9HKHvtnhmu5alFnnKBOJUW2aqydQ==",
   "success": true,
-  "projectFilePath": "D:\\Программирование\\Projects\\ShortenerLinkProject\\LinkShortener\\BusinessLogic\\BusinessLogic.csproj",
+  "projectFilePath": "D:\\Программирование\\Projects\\ShortenerLinkProject\\LinkShortener\\BusinessLogic\\LinkShortener.BusinessLogic.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Ноутбук\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
     "C:\\Users\\Ноутбук\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\Ноутбук\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.4\\microsoft.data.sqlclient.2.1.4.nupkg.sha512",
     "C:\\Users\\Ноутбук\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\2.1.1\\microsoft.data.sqlclient.sni.runtime.2.1.1.nupkg.sha512",

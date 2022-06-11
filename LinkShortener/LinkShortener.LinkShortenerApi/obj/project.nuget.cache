@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "2c11vIuLSlyL8Kc/M/MJaFQ9CDQj43mkj6oU/Dx/vNLINq1av8IDnG7zitgNKtGfc9MdQDByR16mrtYOABhGcg==",
+  "dgSpecHash": "aGw9O2/4SH0HXzuSctVmS0ppVljyEdy4UwVPS/VFAEMeJoHfGAUj/Fd/IxYKzwJLG5Y77Xk/gIlu9CN2WRNXbA==",
   "success": true,
   "projectFilePath": "D:\\Программирование\\Projects\\ShortenerLinkProject\\LinkShortener\\LinkShortener.LinkShortenerApi\\LinkShortener.LinkShortenerApi.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Ноутбук\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
     "C:\\Users\\Ноутбук\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\Ноутбук\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.4\\microsoft.data.sqlclient.2.1.4.nupkg.sha512",
     "C:\\Users\\Ноутбук\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\2.1.1\\microsoft.data.sqlclient.sni.runtime.2.1.1.nupkg.sha512",

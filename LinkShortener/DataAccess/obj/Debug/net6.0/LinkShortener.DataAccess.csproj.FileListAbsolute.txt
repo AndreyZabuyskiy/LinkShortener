@@ -1,0 +1,15 @@
+D:\Программирование\Projects\ShortenerLinkProject\LinkShortener\DataAccess\bin\Debug\net6.0\LinkShortener.DataAccess.deps.json
+D:\Программирование\Projects\ShortenerLinkProject\LinkShortener\DataAccess\bin\Debug\net6.0\LinkShortener.DataAccess.dll
+D:\Программирование\Projects\ShortenerLinkProject\LinkShortener\DataAccess\bin\Debug\net6.0\LinkShortener.DataAccess.pdb
+D:\Программирование\Projects\ShortenerLinkProject\LinkShortener\DataAccess\bin\Debug\net6.0\LinkShortener.Domain.dll
+D:\Программирование\Projects\ShortenerLinkProject\LinkShortener\DataAccess\bin\Debug\net6.0\LinkShortener.Domain.pdb
+D:\Программирование\Projects\ShortenerLinkProject\LinkShortener\DataAccess\obj\Debug\net6.0\LinkShortener.DataAccess.csproj.AssemblyReference.cache
+D:\Программирование\Projects\ShortenerLinkProject\LinkShortener\DataAccess\obj\Debug\net6.0\LinkShortener.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+D:\Программирование\Projects\ShortenerLinkProject\LinkShortener\DataAccess\obj\Debug\net6.0\LinkShortener.DataAccess.AssemblyInfoInputs.cache
+D:\Программирование\Projects\ShortenerLinkProject\LinkShortener\DataAccess\obj\Debug\net6.0\LinkShortener.DataAccess.AssemblyInfo.cs
+D:\Программирование\Projects\ShortenerLinkProject\LinkShortener\DataAccess\obj\Debug\net6.0\LinkShortener.DataAccess.csproj.CoreCompileInputs.cache
+D:\Программирование\Projects\ShortenerLinkProject\LinkShortener\DataAccess\obj\Debug\net6.0\LinkShortener.DataAccess.csproj.CopyComplete
+D:\Программирование\Projects\ShortenerLinkProject\LinkShortener\DataAccess\obj\Debug\net6.0\LinkShortener.DataAccess.dll
+D:\Программирование\Projects\ShortenerLinkProject\LinkShortener\DataAccess\obj\Debug\net6.0\refint\LinkShortener.DataAccess.dll
+D:\Программирование\Projects\ShortenerLinkProject\LinkShortener\DataAccess\obj\Debug\net6.0\LinkShortener.DataAccess.pdb
+D:\Программирование\Projects\ShortenerLinkProject\LinkShortener\DataAccess\obj\Debug\net6.0\ref\LinkShortener.DataAccess.dll

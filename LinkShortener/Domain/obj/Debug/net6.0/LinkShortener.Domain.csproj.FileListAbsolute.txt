@@ -1,0 +1,12 @@
+D:\Программирование\Projects\ShortenerLinkProject\LinkShortener\Domain\bin\Debug\net6.0\LinkShortener.Domain.deps.json
+D:\Программирование\Projects\ShortenerLinkProject\LinkShortener\Domain\bin\Debug\net6.0\LinkShortener.Domain.dll
+D:\Программирование\Projects\ShortenerLinkProject\LinkShortener\Domain\bin\Debug\net6.0\LinkShortener.Domain.pdb
+D:\Программирование\Projects\ShortenerLinkProject\LinkShortener\Domain\obj\Debug\net6.0\LinkShortener.Domain.csproj.AssemblyReference.cache
+D:\Программирование\Projects\ShortenerLinkProject\LinkShortener\Domain\obj\Debug\net6.0\LinkShortener.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Программирование\Projects\ShortenerLinkProject\LinkShortener\Domain\obj\Debug\net6.0\LinkShortener.Domain.AssemblyInfoInputs.cache
+D:\Программирование\Projects\ShortenerLinkProject\LinkShortener\Domain\obj\Debug\net6.0\LinkShortener.Domain.AssemblyInfo.cs
+D:\Программирование\Projects\ShortenerLinkProject\LinkShortener\Domain\obj\Debug\net6.0\LinkShortener.Domain.csproj.CoreCompileInputs.cache
+D:\Программирование\Projects\ShortenerLinkProject\LinkShortener\Domain\obj\Debug\net6.0\LinkShortener.Domain.dll
+D:\Программирование\Projects\ShortenerLinkProject\LinkShortener\Domain\obj\Debug\net6.0\refint\LinkShortener.Domain.dll
+D:\Программирование\Projects\ShortenerLinkProject\LinkShortener\Domain\obj\Debug\net6.0\LinkShortener.Domain.pdb
+D:\Программирование\Projects\ShortenerLinkProject\LinkShortener\Domain\obj\Debug\net6.0\ref\LinkShortener.Domain.dll

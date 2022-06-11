@@ -1,0 +1,17 @@
+D:\Программирование\Projects\ShortenerLinkProject\LinkShortener\BusinessLogic\bin\Debug\net6.0\LinkShortener.BusinessLogic.deps.json
+D:\Программирование\Projects\ShortenerLinkProject\LinkShortener\BusinessLogic\bin\Debug\net6.0\LinkShortener.BusinessLogic.dll
+D:\Программирование\Projects\ShortenerLinkProject\LinkShortener\BusinessLogic\bin\Debug\net6.0\LinkShortener.BusinessLogic.pdb
+D:\Программирование\Projects\ShortenerLinkProject\LinkShortener\BusinessLogic\bin\Debug\net6.0\LinkShortener.DataAccess.dll
+D:\Программирование\Projects\ShortenerLinkProject\LinkShortener\BusinessLogic\bin\Debug\net6.0\LinkShortener.Domain.dll
+D:\Программирование\Projects\ShortenerLinkProject\LinkShortener\BusinessLogic\bin\Debug\net6.0\LinkShortener.DataAccess.pdb
+D:\Программирование\Projects\ShortenerLinkProject\LinkShortener\BusinessLogic\bin\Debug\net6.0\LinkShortener.Domain.pdb
+D:\Программирование\Projects\ShortenerLinkProject\LinkShortener\BusinessLogic\obj\Debug\net6.0\LinkShortener.BusinessLogic.csproj.AssemblyReference.cache
+D:\Программирование\Projects\ShortenerLinkProject\LinkShortener\BusinessLogic\obj\Debug\net6.0\LinkShortener.BusinessLogic.GeneratedMSBuildEditorConfig.editorconfig
+D:\Программирование\Projects\ShortenerLinkProject\LinkShortener\BusinessLogic\obj\Debug\net6.0\LinkShortener.BusinessLogic.AssemblyInfoInputs.cache
+D:\Программирование\Projects\ShortenerLinkProject\LinkShortener\BusinessLogic\obj\Debug\net6.0\LinkShortener.BusinessLogic.AssemblyInfo.cs
+D:\Программирование\Projects\ShortenerLinkProject\LinkShortener\BusinessLogic\obj\Debug\net6.0\LinkShortener.BusinessLogic.csproj.CoreCompileInputs.cache
+D:\Программирование\Projects\ShortenerLinkProject\LinkShortener\BusinessLogic\obj\Debug\net6.0\LinkShortener.BusinessLogic.csproj.CopyComplete
+D:\Программирование\Projects\ShortenerLinkProject\LinkShortener\BusinessLogic\obj\Debug\net6.0\LinkShortener.BusinessLogic.dll
+D:\Программирование\Projects\ShortenerLinkProject\LinkShortener\BusinessLogic\obj\Debug\net6.0\refint\LinkShortener.BusinessLogic.dll
+D:\Программирование\Projects\ShortenerLinkProject\LinkShortener\BusinessLogic\obj\Debug\net6.0\LinkShortener.BusinessLogic.pdb
+D:\Программирование\Projects\ShortenerLinkProject\LinkShortener\BusinessLogic\obj\Debug\net6.0\ref\LinkShortener.BusinessLogic.dll

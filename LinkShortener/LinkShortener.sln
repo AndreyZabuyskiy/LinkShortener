@@ -10,11 +10,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		.editorconfig = .editorconfig
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessLogic", "BusinessLogic\BusinessLogic.csproj", "{4AE32160-D0FF-4E3E-A7CF-443DE053D242}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinkShortener.BusinessLogic", "BusinessLogic\LinkShortener.BusinessLogic.csproj", "{4AE32160-D0FF-4E3E-A7CF-443DE053D242}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccess", "DataAccess\DataAccess.csproj", "{0F6D30CB-AA0A-4249-8231-6F19A954C837}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinkShortener.DataAccess", "DataAccess\LinkShortener.DataAccess.csproj", "{0F6D30CB-AA0A-4249-8231-6F19A954C837}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "Domain\Domain.csproj", "{62FB3330-2759-41DB-99E5-6EFD192F4B04}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinkShortener.Domain", "Domain\LinkShortener.Domain.csproj", "{62FB3330-2759-41DB-99E5-6EFD192F4B04}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

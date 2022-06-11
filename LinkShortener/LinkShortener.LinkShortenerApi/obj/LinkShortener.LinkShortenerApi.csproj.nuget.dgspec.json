@@ -4,12 +4,12 @@
     "D:\\Программирование\\Projects\\ShortenerLinkProject\\LinkShortener\\LinkShortener.LinkShortenerApi\\LinkShortener.LinkShortenerApi.csproj": {}
   },
   "projects": {
-    "D:\\Программирование\\Projects\\ShortenerLinkProject\\LinkShortener\\BusinessLogic\\BusinessLogic.csproj": {
+    "D:\\Программирование\\Projects\\ShortenerLinkProject\\LinkShortener\\BusinessLogic\\LinkShortener.BusinessLogic.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Программирование\\Projects\\ShortenerLinkProject\\LinkShortener\\BusinessLogic\\BusinessLogic.csproj",
-        "projectName": "BusinessLogic",
-        "projectPath": "D:\\Программирование\\Projects\\ShortenerLinkProject\\LinkShortener\\BusinessLogic\\BusinessLogic.csproj",
+        "projectUniqueName": "D:\\Программирование\\Projects\\ShortenerLinkProject\\LinkShortener\\BusinessLogic\\LinkShortener.BusinessLogic.csproj",
+        "projectName": "LinkShortener.BusinessLogic",
+        "projectPath": "D:\\Программирование\\Projects\\ShortenerLinkProject\\LinkShortener\\BusinessLogic\\LinkShortener.BusinessLogic.csproj",
         "packagesPath": "C:\\Users\\Ноутбук\\.nuget\\packages\\",
         "outputPath": "D:\\Программирование\\Projects\\ShortenerLinkProject\\LinkShortener\\BusinessLogic\\obj\\",
         "projectStyle": "PackageReference",
@@ -32,8 +32,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\Программирование\\Projects\\ShortenerLinkProject\\LinkShortener\\DataAccess\\DataAccess.csproj": {
-                "projectPath": "D:\\Программирование\\Projects\\ShortenerLinkProject\\LinkShortener\\DataAccess\\DataAccess.csproj"
+              "D:\\Программирование\\Projects\\ShortenerLinkProject\\LinkShortener\\DataAccess\\LinkShortener.DataAccess.csproj": {
+                "projectPath": "D:\\Программирование\\Projects\\ShortenerLinkProject\\LinkShortener\\DataAccess\\LinkShortener.DataAccess.csproj"
               }
             }
           }
@@ -48,6 +48,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "BCrypt.Net-Next": {
+              "target": "Package",
+              "version": "[4.0.3, )"
+            },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[6.0.5, )"
@@ -72,12 +76,12 @@
         }
       }
     },
-    "D:\\Программирование\\Projects\\ShortenerLinkProject\\LinkShortener\\DataAccess\\DataAccess.csproj": {
+    "D:\\Программирование\\Projects\\ShortenerLinkProject\\LinkShortener\\DataAccess\\LinkShortener.DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Программирование\\Projects\\ShortenerLinkProject\\LinkShortener\\DataAccess\\DataAccess.csproj",
-        "projectName": "DataAccess",
-        "projectPath": "D:\\Программирование\\Projects\\ShortenerLinkProject\\LinkShortener\\DataAccess\\DataAccess.csproj",
+        "projectUniqueName": "D:\\Программирование\\Projects\\ShortenerLinkProject\\LinkShortener\\DataAccess\\LinkShortener.DataAccess.csproj",
+        "projectName": "LinkShortener.DataAccess",
+        "projectPath": "D:\\Программирование\\Projects\\ShortenerLinkProject\\LinkShortener\\DataAccess\\LinkShortener.DataAccess.csproj",
         "packagesPath": "C:\\Users\\Ноутбук\\.nuget\\packages\\",
         "outputPath": "D:\\Программирование\\Projects\\ShortenerLinkProject\\LinkShortener\\DataAccess\\obj\\",
         "projectStyle": "PackageReference",
@@ -100,8 +104,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\Программирование\\Projects\\ShortenerLinkProject\\LinkShortener\\Domain\\Domain.csproj": {
-                "projectPath": "D:\\Программирование\\Projects\\ShortenerLinkProject\\LinkShortener\\Domain\\Domain.csproj"
+              "D:\\Программирование\\Projects\\ShortenerLinkProject\\LinkShortener\\Domain\\LinkShortener.Domain.csproj": {
+                "projectPath": "D:\\Программирование\\Projects\\ShortenerLinkProject\\LinkShortener\\Domain\\LinkShortener.Domain.csproj"
               }
             }
           }
@@ -116,6 +120,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "BCrypt.Net-Next": {
+              "target": "Package",
+              "version": "[4.0.3, )"
+            },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[6.0.5, )"
@@ -140,12 +148,12 @@
         }
       }
     },
-    "D:\\Программирование\\Projects\\ShortenerLinkProject\\LinkShortener\\Domain\\Domain.csproj": {
+    "D:\\Программирование\\Projects\\ShortenerLinkProject\\LinkShortener\\Domain\\LinkShortener.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Программирование\\Projects\\ShortenerLinkProject\\LinkShortener\\Domain\\Domain.csproj",
-        "projectName": "Domain",
-        "projectPath": "D:\\Программирование\\Projects\\ShortenerLinkProject\\LinkShortener\\Domain\\Domain.csproj",
+        "projectUniqueName": "D:\\Программирование\\Projects\\ShortenerLinkProject\\LinkShortener\\Domain\\LinkShortener.Domain.csproj",
+        "projectName": "LinkShortener.Domain",
+        "projectPath": "D:\\Программирование\\Projects\\ShortenerLinkProject\\LinkShortener\\Domain\\LinkShortener.Domain.csproj",
         "packagesPath": "C:\\Users\\Ноутбук\\.nuget\\packages\\",
         "outputPath": "D:\\Программирование\\Projects\\ShortenerLinkProject\\LinkShortener\\Domain\\obj\\",
         "projectStyle": "PackageReference",
@@ -180,6 +188,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "BCrypt.Net-Next": {
+              "target": "Package",
+              "version": "[4.0.3, )"
+            },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[6.0.5, )"
@@ -232,11 +244,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\Программирование\\Projects\\ShortenerLinkProject\\LinkShortener\\BusinessLogic\\BusinessLogic.csproj": {
-                "projectPath": "D:\\Программирование\\Projects\\ShortenerLinkProject\\LinkShortener\\BusinessLogic\\BusinessLogic.csproj"
+              "D:\\Программирование\\Projects\\ShortenerLinkProject\\LinkShortener\\BusinessLogic\\LinkShortener.BusinessLogic.csproj": {
+                "projectPath": "D:\\Программирование\\Projects\\ShortenerLinkProject\\LinkShortener\\BusinessLogic\\LinkShortener.BusinessLogic.csproj"
               },
-              "D:\\Программирование\\Projects\\ShortenerLinkProject\\LinkShortener\\DataAccess\\DataAccess.csproj": {
-                "projectPath": "D:\\Программирование\\Projects\\ShortenerLinkProject\\LinkShortener\\DataAccess\\DataAccess.csproj"
+              "D:\\Программирование\\Projects\\ShortenerLinkProject\\LinkShortener\\DataAccess\\LinkShortener.DataAccess.csproj": {
+                "projectPath": "D:\\Программирование\\Projects\\ShortenerLinkProject\\LinkShortener\\DataAccess\\LinkShortener.DataAccess.csproj"
               }
             }
           }
@@ -251,6 +263,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "BCrypt.Net-Next": {
+              "target": "Package",
+              "version": "[4.0.3, )"
+            },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[6.0.5, )"
