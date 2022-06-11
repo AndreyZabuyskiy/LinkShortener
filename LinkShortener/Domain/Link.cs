@@ -1,6 +1,6 @@
 ﻿namespace Domain;
 
-public class Url
+public class Link
 {
     public Guid Id { get; set; }
     public string FullUrl { get; set; }
