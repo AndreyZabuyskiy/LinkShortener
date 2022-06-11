@@ -1,4 +1,7 @@
+using BusinessLogic.Services;
+using BusinessLogic.UseCases;
 using DataAccess;
+using DataAccess.Repository;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -10,12 +13,14 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-// получаем строку подключения из файла конфигурации
 string connection = builder.Configuration.GetConnectionString("DefaultConnection");
-// добавляем контекст ApplicationContext в качестве сервиса в приложение
 builder.Services.AddDbContext<ApplicationContext>(options =>
     options.UseSqlServer(connection));
 builder.Services.AddControllersWithViews();
+
+builder.Services.AddScoped<IRepository, SqlRepository>();
+
+builder.Services.AddScoped<IRegisterUser, AuthService>();
 
 var app = builder.Build();
 

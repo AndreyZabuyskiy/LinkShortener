@@ -666,6 +666,20 @@
           }
         }
       },
+      "BusinessLogic/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "DataAccess": "1.0.0",
+          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.5"
+        },
+        "compile": {
+          "bin/placeholder/BusinessLogic.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BusinessLogic.dll": {}
+        }
+      },
       "DataAccess/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -1982,6 +1996,11 @@
         "version.txt"
       ]
     },
+    "BusinessLogic/1.0.0": {
+      "type": "project",
+      "path": "../BusinessLogic/BusinessLogic.csproj",
+      "msbuildProject": "../BusinessLogic/BusinessLogic.csproj"
+    },
     "DataAccess/1.0.0": {
       "type": "project",
       "path": "../DataAccess/DataAccess.csproj",
@@ -1995,6 +2014,7 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "BusinessLogic >= 1.0.0",
       "DataAccess >= 1.0.0",
       "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.5",
       "Swashbuckle.AspNetCore >= 6.2.3"
@@ -2032,6 +2052,9 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
+            "D:\\Программирование\\Projects\\ShortenerLinkProject\\LinkShortener\\BusinessLogic\\BusinessLogic.csproj": {
+              "projectPath": "D:\\Программирование\\Projects\\ShortenerLinkProject\\LinkShortener\\BusinessLogic\\BusinessLogic.csproj"
+            },
             "D:\\Программирование\\Projects\\ShortenerLinkProject\\LinkShortener\\DataAccess\\DataAccess.csproj": {
               "projectPath": "D:\\Программирование\\Projects\\ShortenerLinkProject\\LinkShortener\\DataAccess\\DataAccess.csproj"
             }
