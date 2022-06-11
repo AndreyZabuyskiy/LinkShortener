@@ -1,5 +1,7 @@
 ﻿using BusinessLogic.UseCases;
 using LinkShortener.BusinessLogic.Dtos;
+using LinkShortener.LinkShortenerApi.ReponseApi;
+using LinkShortener.LinkShortenerApi.ReponseApi.Responses;
 using Microsoft.AspNetCore.Mvc;
 
 namespace LinkShortener.LinkShortenerApi.Controllers;
@@ -19,6 +21,14 @@ public class AuthController : Controller
     public IActionResult Register(RegisterDto registerData)
     {
         var user = _registerUser.Register(registerData);
-        return Created("Success", user);
+
+        var response = new RegisterResponse()
+        {
+            Status = StatusResponse.Success,
+            Data = user,
+            Messages = new List<string>() { "Success" }
+        };
+
+        return Created("Success", response);
     }
 }
