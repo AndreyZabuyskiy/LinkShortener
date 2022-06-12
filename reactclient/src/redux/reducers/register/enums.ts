@@ -1,0 +1,7 @@
+enum RegisterActionTypes {
+  FETCH_REGISTER = 'FETCH_REGISTER',
+  FETCH_REGISTER_SUCCESS = 'FETCH_REGISTER_SUCCESS',
+  FETCH_REGISTER_ERROR = 'FETCH_REGISTER_ERROR'
+}
+
+export default RegisterActionTypes;
