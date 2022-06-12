@@ -80,4 +80,16 @@ public class AuthController : Controller
             return Unauthorized();
         }
     }
+
+    [HttpGet("logout")]
+    public IActionResult Logout()
+    {
+        Response.Cookies.Delete("jwt");
+
+        return Ok(new LoginResponse()
+        {
+            Status = StatusResponse.Success,
+            Messages = new List<string> { "Success" }
+        });
+    }
 }
