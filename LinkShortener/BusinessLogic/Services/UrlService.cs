@@ -6,13 +6,18 @@ using LinkShortener.DataAccess.Entities.Request;
 
 namespace LinkShortener.BusinessLogic.Services;
 
-public class ShortenerUrlService : ISaveUrl, IHistory
+public class UrlService : ISaveUrl, IHistory, IDeleteUrl
 {
     private readonly IRepository _repository;
 
-    public ShortenerUrlService(IRepository repository)
+    public UrlService(IRepository repository)
     {
         _repository = repository;
+    }
+
+    public bool DeleteUrl(Guid id)
+    {
+        return _repository.DeleteUrl(id);
     }
 
     public List<UrlDto> GetHistory(Guid userId)

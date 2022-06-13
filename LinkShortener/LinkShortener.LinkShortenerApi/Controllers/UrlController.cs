@@ -8,17 +8,19 @@ namespace LinkShortener.LinkShortenerApi.Controllers;
 
 [Route("api/[controller]")]
 [ApiController]
-public class ShortenerUrlController : Controller
+public class UrlController : Controller
 {
     private readonly IGetUser _getUser;
     private readonly ISaveUrl _saveUrl;
     private readonly IHistory _history;
+    private readonly IDeleteUrl _deleteUrl;
 
-    public ShortenerUrlController(IGetUser getUser, ISaveUrl saveUrl, IHistory history)
+    public UrlController(IGetUser getUser, ISaveUrl saveUrl, IHistory history, IDeleteUrl deleteUrl)
     {
         _getUser = getUser;
         _saveUrl = saveUrl;
         _history = history;
+        _deleteUrl = deleteUrl;
     }
 
     [HttpPost("save-url")]
@@ -44,13 +46,23 @@ public class ShortenerUrlController : Controller
         var jwt = Request.Cookies["jwt"];
         var user = _getUser.GetUser(jwt);
 
-        var listUrl = _history.GetHistory(user.Id);
-
         return Ok(new HistoreResponse()
         {
             Status = StatusResponse.Success,
-            Data = listUrl,
+            Data = _history.GetHistory(user.Id),
             Messages = new List<string> { "Success" }
+        });
+    }
+
+    [HttpDelete("{id}")]
+    public IActionResult DeleteUrl(Guid id)
+    {
+        _deleteUrl.DeleteUrl(id);
+
+        return Ok(new DeleteUrlResponse()
+        {
+            Status = StatusResponse.Success,
+            Messages = new List<string>() { "Success" }
         });
     }
 }

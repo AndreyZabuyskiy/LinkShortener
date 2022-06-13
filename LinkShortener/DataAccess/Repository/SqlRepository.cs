@@ -31,6 +31,17 @@ public class SqlRepository : IRepository
         };
     }
 
+    public bool DeleteUrl(Guid id)
+    {
+        var link = _context.Links.FirstOrDefault(l => l.Id == id);
+        
+        if(link == null) return false;
+
+        _context.Links.Remove(link);
+        _context.SaveChanges();
+        return true;
+    }
+
     public UserReadModel GetById(Guid id)
     {
         var user = _context.Users.FirstOrDefault(u => u.Id == id);

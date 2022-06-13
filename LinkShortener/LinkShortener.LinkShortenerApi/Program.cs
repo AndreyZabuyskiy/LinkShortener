@@ -27,8 +27,9 @@ builder.Services.AddScoped<IRegisterUser, AuthService>();
 builder.Services.AddScoped<ILoginUser, AuthService>();
 builder.Services.AddScoped<IGetUser, AuthService>();
 
-builder.Services.AddScoped<ISaveUrl, ShortenerUrlService>();
-builder.Services.AddScoped<IHistory, ShortenerUrlService>();
+builder.Services.AddScoped<ISaveUrl, UrlService>();
+builder.Services.AddScoped<IHistory, UrlService>();
+builder.Services.AddScoped<IDeleteUrl, UrlService>();
 
 var app = builder.Build();
 
