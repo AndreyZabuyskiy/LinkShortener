@@ -17,9 +17,7 @@ const Home = () => {
 
   const submit = (e: SyntheticEvent) => {
     e.preventDefault();
-
-    dispatch(fetchShortUrl(url));
-    //alert(`short url -> ${shortUrl}`);
+    dispatch(fetchShortUrl(user.id, url));
   }
 
   console.log(`short url -> ${shortUrl}`);

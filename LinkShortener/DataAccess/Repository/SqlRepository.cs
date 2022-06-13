@@ -57,4 +57,22 @@ public class SqlRepository : IRepository
             Passport = user.Password
         };
     }
+
+    public bool SaveUrl(UrlSaveModel model)
+    {
+        var user = _context.Users.FirstOrDefault(u => u.Id == model.UserId);
+
+        if (user == null) return false;
+
+        var link = new Link()
+        {
+            FullUrl = model.FullUrl,
+            ShortUrl = model.ShortUrl,
+            User = user
+        };
+
+        _context.Links.Add(link);
+        _context.SaveChanges();
+        return true;
+    }
 }

@@ -6,7 +6,7 @@ export const fetchAuth = (): any => {
   return async (dispatch: Dispatch<AuthAction>) => {
     try {
       dispatch({ type: AuthActionTypes.FETCH_AUTH })
-
+      debugger;
       const response = await fetch(`http://localhost:8000/api/Auth/user`, {
         headers: {'Content-Type': 'application/json'},
         credentials: 'include'

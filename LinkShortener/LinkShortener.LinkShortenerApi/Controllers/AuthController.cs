@@ -65,7 +65,6 @@ public class AuthController : Controller
         try
         {
             var jwt = Request.Cookies["jwt"];
-
             var user = _getUser.GetUser(jwt);
 
             return Ok(new GetUserResponse()

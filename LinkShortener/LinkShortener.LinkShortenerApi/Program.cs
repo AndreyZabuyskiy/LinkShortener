@@ -1,6 +1,7 @@
 using BusinessLogic.Services;
 using DataAccess;
 using DataAccess.Repository;
+using LinkShortener.BusinessLogic.Services;
 using LinkShortener.BusinessLogic.UseCases;
 using Microsoft.EntityFrameworkCore;
 
@@ -25,6 +26,8 @@ builder.Services.AddScoped<IRepository, SqlRepository>();
 builder.Services.AddScoped<IRegisterUser, AuthService>();
 builder.Services.AddScoped<ILoginUser, AuthService>();
 builder.Services.AddScoped<IGetUser, AuthService>();
+
+builder.Services.AddScoped<ISaveUrl, ShortenerUrlService>();
 
 var app = builder.Build();
 
