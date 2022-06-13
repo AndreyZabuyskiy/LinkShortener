@@ -16,7 +16,10 @@ export const fetchRegister = (user: any): any => {
       })
 
       const content = await response.json();
-      debugger;
+      dispatch({ 
+        type: RegisterActionTypes.FETCH_REGISTER_SUCCESS, 
+        payload: content.data
+      });
     } catch (e) {
       dispatch({
         type: RegisterActionTypes.FETCH_REGISTER_ERROR,

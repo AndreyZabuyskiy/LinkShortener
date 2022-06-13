@@ -1,6 +1,6 @@
 import { SyntheticEvent, useState } from "react";
 import { useDispatch } from "react-redux";
-import { fetchRegister } from "../api/register";
+import { fetchRegister } from "../api/registerApi";
 
 const RegisterForm = () => {
   const [login, setLogin] = useState('');
@@ -19,6 +19,8 @@ const RegisterForm = () => {
     e.preventDefault();
 
     dispatch(fetchRegister({ login, password }));
+
+    alert("Successfully");
   }
 
   return (
