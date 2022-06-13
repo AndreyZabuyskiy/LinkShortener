@@ -7,7 +7,7 @@ const initialState: LoginState = {
   error: null
 }
 
-export const LoginReducer = (state = initialState, action: LoginAction): LoginState => {
+export const loginReducer = (state = initialState, action: LoginAction): LoginState => {
   switch(action.type){
     case LoginActionTypes.FETCH_LOGIN:
       return { loading: true, error: null, wasLogin: false }
@@ -17,6 +17,9 @@ export const LoginReducer = (state = initialState, action: LoginAction): LoginSt
 
     case LoginActionTypes.FETCH_LOGIN_ERROR:
       return { loading: false, error: action.payload, wasLogin: action.payload }
+
+    case LoginActionTypes.FETCH_LOGOUT:
+      return { loading: false, error: null, wasLogin: false }
 
       default:
         return state;

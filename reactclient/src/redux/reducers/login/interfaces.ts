@@ -20,6 +20,11 @@ interface FetchLoginErrorAction {
   payload: any;
 }
 
+interface FetchLogoutAction {
+  type: LoginActionTypes.FETCH_LOGOUT
+}
+
 export type LoginAction = FetchLoginAction
   | FetchLoginSuccessAction
   | FetchLoginErrorAction
+  | FetchLogoutAction

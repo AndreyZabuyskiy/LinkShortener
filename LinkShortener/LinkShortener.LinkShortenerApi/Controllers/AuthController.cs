@@ -77,7 +77,12 @@ public class AuthController : Controller
         }
         catch (Exception ex)
         {
-            return Unauthorized();
+            return Unauthorized(new GetUserResponse()
+            {
+                Status = StatusResponse.NotLogin,
+                Data = null,
+                Messages = new List<string>() { "Success" }
+            });
         }
     }
 

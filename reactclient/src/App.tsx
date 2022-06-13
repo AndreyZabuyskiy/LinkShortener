@@ -4,8 +4,19 @@ import Navbar from './components/Navbar';
 import { Routes, Route } from 'react-router-dom';
 import Home from './components/Home';
 import RegisterForm from './components/RegisterForm';
+import { fetchAuth } from './api/authApi';
+import { useEffect } from 'react';
+import { useTypedSelector } from './hooks/useTypedSelector';
+import { useDispatch } from 'react-redux';
 
 function App() {
+  const {user, error, loading} = useTypedSelector(state => state.authReducer);
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(fetchAuth())
+  }, []);
+
   return (
     <div className="App">
       <Navbar />

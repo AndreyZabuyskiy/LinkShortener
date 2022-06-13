@@ -30,3 +30,22 @@ export const fetchLogin = (user: any): any => {
     }
   }
 }
+
+export const fetchLogout = (): any => {
+  return async (dispatch: Dispatch<LoginAction>) => {
+    try{
+      const response = await fetch(`http://localhost:8000/api/Auth/logout`, {
+        headers: {'Content-Type': 'application/json'},
+        credentials: 'include'
+      })
+      const content = await response.json();
+      
+      dispatch({ type: LoginActionTypes.FETCH_LOGOUT });
+    } catch (e) {
+      dispatch({
+        type: LoginActionTypes.FETCH_LOGIN_ERROR,
+        payload: "Error logout"
+      });
+    }
+  }
+}
