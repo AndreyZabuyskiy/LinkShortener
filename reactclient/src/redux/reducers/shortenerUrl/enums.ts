@@ -1,0 +1,7 @@
+enum ShortUrlActionTypes {
+  FETCH_SHORT_URL = 'FETCH_SHORT_URL',
+  FETCH_SHORT_URL_SUCCESS = 'FETCH_SHORT_URL_SUCCESS',
+  FETCH_SHORT_URL_ERROR = 'FETCH_SHORT_URL_ERROR'
+}
+
+export default ShortUrlActionTypes;
