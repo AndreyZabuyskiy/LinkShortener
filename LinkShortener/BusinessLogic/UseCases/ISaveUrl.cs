@@ -3,5 +3,5 @@
 namespace LinkShortener.BusinessLogic.UseCases;
 public interface ISaveUrl
 {
-    bool Save(UrlSaveDto data);
+    bool Save(Guid userId, UrlSaveDto data);
 }

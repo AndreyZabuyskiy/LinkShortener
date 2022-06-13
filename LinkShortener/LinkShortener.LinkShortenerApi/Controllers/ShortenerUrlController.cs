@@ -10,17 +10,22 @@ namespace LinkShortener.LinkShortenerApi.Controllers;
 [ApiController]
 public class ShortenerUrlController : Controller
 {
+    private readonly IGetUser _getUser;
     private readonly ISaveUrl _saveUrl;
 
     public ShortenerUrlController(IGetUser getUser, ISaveUrl saveUrl)
     {
+        _getUser = getUser;
         _saveUrl = saveUrl;
     }
 
     [HttpPost("save-url")]
     public IActionResult SaveUrl(UrlSaveDto data)
     {
-        var result = _saveUrl.Save(data);
+        var jwt = Request.Cookies["jwt"];
+        var user = _getUser.GetUser(jwt);
+
+        var result = _saveUrl.Save(user.Id, data);
 
         var response = new SaveUrlResponse()
         {

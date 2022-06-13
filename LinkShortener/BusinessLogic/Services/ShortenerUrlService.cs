@@ -14,11 +14,11 @@ public class ShortenerUrlService : ISaveUrl
         _repository = repository;
     }
 
-    public bool Save(UrlSaveDto data)
+    public bool Save(Guid userId, UrlSaveDto data)
     {
         var model = new UrlSaveModel()
         {
-            UserId = data.UserId,
+            UserId = userId,
             FullUrl = data.FullUrl,
             ShortUrl = data.ShortUrl
         };
