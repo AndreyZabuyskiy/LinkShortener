@@ -12,11 +12,13 @@ public class ShortenerUrlController : Controller
 {
     private readonly IGetUser _getUser;
     private readonly ISaveUrl _saveUrl;
+    private readonly IHistory _history;
 
-    public ShortenerUrlController(IGetUser getUser, ISaveUrl saveUrl)
+    public ShortenerUrlController(IGetUser getUser, ISaveUrl saveUrl, IHistory history)
     {
         _getUser = getUser;
         _saveUrl = saveUrl;
+        _history = history;
     }
 
     [HttpPost("save-url")]
@@ -34,5 +36,21 @@ public class ShortenerUrlController : Controller
         };
 
         return Ok(response);
+    }
+
+    [HttpGet("history")]
+    public IActionResult GetHistoryUrl()
+    {
+        var jwt = Request.Cookies["jwt"];
+        var user = _getUser.GetUser(jwt);
+
+        var listUrl = _history.GetHistory(user.Id);
+
+        return Ok(new HistoreResponse()
+        {
+            Status = StatusResponse.Success,
+            Data = listUrl,
+            Messages = new List<string> { "Success" }
+        });
     }
 }

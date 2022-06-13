@@ -58,6 +58,24 @@ public class SqlRepository : IRepository
         };
     }
 
+    public List<UrlModel> GetHistory(Guid userId)
+    {
+        var listUrl = _context.Links.Where(l => l.User.Id == userId).ToList();
+        var result = new List<UrlModel>();
+        
+        foreach(var url in listUrl)
+        {
+            result.Add(new UrlModel()
+            {
+                Id = url.Id,
+                FullUrl = url.FullUrl,
+                ShortUrl = url.ShortUrl
+            });
+        }
+
+        return result;
+    }
+
     public bool SaveUrl(UrlSaveModel model)
     {
         var user = _context.Users.FirstOrDefault(u => u.Id == model.UserId);

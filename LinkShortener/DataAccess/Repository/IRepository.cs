@@ -9,4 +9,5 @@ public interface IRepository
     UserLoginModel GetByLogin(string login);
     UserReadModel GetById(Guid id);
     bool SaveUrl(UrlSaveModel model);
+    List<UrlModel> GetHistory(Guid userId);
 }
