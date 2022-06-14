@@ -1,0 +1,7 @@
+enum HistoryActionTypes {
+  FETCH_HISTORY = 'FETCH_HISTORY',
+  FETCH_HISTORY_SUCCESS = 'FETCH_HISTORY_SUCCESS',
+  FETCH_HISTORY_ERROR = 'FETCH_HISTORY_ERROR'
+}
+
+export default HistoryActionTypes;

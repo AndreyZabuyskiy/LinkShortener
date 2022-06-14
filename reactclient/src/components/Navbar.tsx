@@ -35,6 +35,9 @@ const Navbar = () => {
           <li className="nav-item">
             <Link className="nav-link active" to="/login" onClick={logout}>Logout</Link>
           </li>
+          <li className="nav-item">
+            <Link className="nav-link active" to="/history">History</Link>
+          </li>
         </ul>
       </div>
     )

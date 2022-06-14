@@ -9,8 +9,9 @@ export const fetchShortUrl = (url: any): any => {
       dispatch({type: ShortUrlActionTypes.FETCH_SHORT_URL});
 
       const response = await axios.get(`https://api.shrtco.de/v2/shorten?url=${url}`);
+      debugger;
 
-      const responseSaveUrl = await fetch(`http://localhost:8000/api/ShortenerUrl/save-url`, {
+      const responseSaveUrl = await fetch(`http://localhost:8000/api/Url/save-url`, {
         method: 'POST',
         headers: {'Content-Type': 'application/json'},
         credentials: 'include',

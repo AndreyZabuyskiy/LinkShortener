@@ -19,8 +19,6 @@ const Home = () => {
     e.preventDefault();
     dispatch(fetchShortUrl(url));
   }
-
-  console.log(`short url -> ${shortUrl}`);
   
   return (
     <div>

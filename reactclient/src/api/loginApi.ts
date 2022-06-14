@@ -8,7 +8,7 @@ export const fetchLogin = (user: any): any => {
       dispatch({ type: LoginActionTypes.FETCH_LOGIN })
       const login = user.login;
       const password = user.password;
-      debugger;
+      
       const response = await fetch(`http://localhost:8000/api/Auth/login`, {
         method: 'POST',
         headers: {'Content-Type': 'application/json'},

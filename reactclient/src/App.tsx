@@ -1,13 +1,15 @@
 import './App.css';
+import { useEffect } from 'react';
+import { Routes, Route } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
+import { useTypedSelector } from './hooks/useTypedSelector';
+
 import LoginForm from './components/LoginForm';
 import Navbar from './components/Navbar';
-import { Routes, Route } from 'react-router-dom';
 import Home from './components/Home';
 import RegisterForm from './components/RegisterForm';
+import History from './components/History';
 import { fetchAuth } from './api/authApi';
-import { useEffect } from 'react';
-import { useTypedSelector } from './hooks/useTypedSelector';
-import { useDispatch } from 'react-redux';
 
 function App() {
   const {user, error, loading} = useTypedSelector(state => state.authReducer);
@@ -27,6 +29,7 @@ function App() {
           <Route path="/home" element={ <Home /> } />
           <Route path="/login" element={ <LoginForm /> } />
           <Route path="/register" element={ <RegisterForm /> } />
+          <Route path="/history" element={ <History /> } />
         </Routes>
       </main>
     </div>
