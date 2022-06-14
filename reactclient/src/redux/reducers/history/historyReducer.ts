@@ -17,6 +17,9 @@ export const historyReducer = (state = initialState, action: HistoryAction): His
 
     case HistoryActionTypes.FETCH_HISTORY_ERROR:
       return { loading: false, error: null, links: null }
+
+    case HistoryActionTypes.FETCH_DELETE_URL:
+      return { loading: false, error: null, links: action.payload }
     
     default:
       return state;

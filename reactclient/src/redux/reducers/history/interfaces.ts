@@ -20,6 +20,12 @@ interface FetchHistoryErrorAction{
   payload: any;
 }
 
+interface FetchDeleteUrlAction{
+  type: HistoryActionTypes.FETCH_DELETE_URL;
+  payload: any;
+}
+
 export type HistoryAction = FetchHistoryAction
   | FetchHistorySuccessAction
   | FetchHistoryErrorAction
+  | FetchDeleteUrlAction

@@ -25,3 +25,32 @@ export const fetchHistory = (): any => {
     }
   }
 }
+
+export const fetchDeleteUrl = (id: any): any => {
+  return async (dispatch: Dispatch<HistoryAction>) => {
+    try{
+      const responseDelete = await fetch(`http://localhost:8000/api/Url/${id}`, {
+        method: 'DELETE',
+        headers: {'Content-Type': 'application/json'},
+        credentials: 'include'
+      })
+      const contentDelete = await responseDelete.json();
+
+      const responseLinks = await fetch(`http://localhost:8000/api/Url/history`, {
+        headers: {'Content-Type': 'application/json'},
+        credentials: 'include'
+      })
+      const links = await responseLinks.json();
+
+      dispatch({
+        type: HistoryActionTypes.FETCH_DELETE_URL,
+        payload: links.data
+      });
+    } catch (e) {
+      dispatch({
+        type: HistoryActionTypes.FETCH_HISTORY_ERROR,
+        payload: "Error load history"
+      });
+    }
+  }
+}

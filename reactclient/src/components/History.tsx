@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { useDispatch } from "react-redux";
-import { fetchHistory } from "../api/historyApi";
+import { fetchDeleteUrl, fetchHistory } from "../api/historyApi";
 import { useTypedSelector } from "../hooks/useTypedSelector";
 
 const History = () => {
@@ -34,7 +34,10 @@ const History = () => {
                   <td scope="row"> { link.fullUrl } </td>
                   <td> { link.shortUrl } </td>
                   <td>
-                    <button className="btn btn-secondary btn-lg mx-3 my-3"> Delete </button>
+                    <button className="btn btn-secondary btn-lg mx-3 my-3"
+                    onClick={(id: any) => dispatch(fetchDeleteUrl(link.id))}>
+                      Delete
+                    </button>
                   </td>
                 </tr>
               ))
